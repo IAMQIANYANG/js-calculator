@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="calculator.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>JavaScript Calculator</h1>
+<div class="output" id="result"><p></p></div>
+<div class="output" id="preview"><p></p></div>
+    <table>
+        <tr>
+            <td colspan="2" id="clear">AC</td>
+            <td colspan="2" id="delete">DEL</td>
+        </tr>
+        <tr class="calc">
+            <td class="digit">7</td>
+            <td class="digit">8</td>
+            <td class="digit">9</td>
+            <td class="operator">÷</td>
+        </tr>
+
+        <tr class="calc">
+            <td class="digit">4</td>
+            <td class="digit">5</td>
+            <td class="digit">6</td>
+            <td class="operator">×</td>
+        </tr>
+
+        <tr class="calc">
+            <td class="digit">1</td>
+            <td class="digit">2</td>
+            <td class="digit">3</td>
+            <td class="operator">-</td>
+        </tr>
+
+        <tr class="calc">
+            <td class="operator" id="decimal">0</td>
+            <td class="digit">.</td>
+            <td class="operator" id="equal">=</td>
+            <td class="operator">+</td>
+        </tr>
+    </table>
+<div class="footer">Copyright @ <a href = "http://iamqianyang.github.io/" target="_blank"> Qian Yang </a></div>
+<script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: #FDE3A7;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+table{
+    margin:auto;
+    border-collapse: collapse;
+    border-spacing:0;
+    width:450px;
+    height:450px;
+    color:white;
+    font-size:20px;
+}
+
+td{
+    width:25%;
+    height: 20%;
+    background: #2C3E50;
+    text-align: center;
+
+}
+
+td:active{
+    width:25%;
+    height: 20%;
+    background: #67809F;
+    text-align: center;
+
+}
+
+.output{
+    margin:-16px auto auto auto;
+    width:450px;
+    text-align: right;
+}
+
+#result{
+    font-size: 25px;
+    height:80px;
+    background: #D2527F;
+
+}
+
+#preview{
+    font-size: 16px;
+    height: 50px;
+    background: #E4F1FE;
+
+}
+
+.output p{
+    padding:20px;
+}
+
+.footer {
+    text-align: center;
+    color:#000000;
+    margin-top:10px;
+}
