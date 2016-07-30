@@ -17,6 +17,8 @@ var equalClicked = false;
 // all buttons expect ac and del
 var calcButtons = document.querySelectorAll('.calc td');
 
+var operator = ['+', '-', '×', '÷'];
+
 //assign event to all digits and operators(except for "=")
 var addEventsCalcButtons = function () {
   for (let i = 0; i < calcButtons.length; i++) {
@@ -68,7 +70,7 @@ var checkAndPassValue = function(i){
     result.innerHTML = ''+ calcButtons[i].innerHTML;
    } else if(calcButtons[i].innerHTML === '.' && result.innerHTML.indexOf('.') !== -1){
     return;
-  } else if(calcButtons[i].className === 'operator' &&  result.innerHTML.indexOf(calcButtons[i].innerHTML) !== -1) {
+  } else if(calcButtons[i].className === 'operator' && operator.indexOf(result.innerHTML.slice(-1)) !== -1 ) {
     return;
   } else if(calcButtons[i].innerHTML === '0' && result.innerHTML.slice(-1) === "÷") {
     preview.innerHTML = '∞'
