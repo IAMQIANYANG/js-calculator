@@ -60,7 +60,11 @@ td:active{
 }
 
 .footer {
+    margin-top: 10px;
     text-align: center;
     color:#000000;
-    margin-top:10px;
+}
+
+.footer a{
+    color:#000000;
 }
